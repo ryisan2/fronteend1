@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    border: 4px solid lightgrey;
+    width: 100px;
+    height: 100px;
+    
+
+}
+.logo{
+
+    height: 100px;
+    width: 100px;
+}
+
+.box-small {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none;
+    margin: 24px; /* Use margin instead of padding to make sure you make space between items*/
+}
+
+.link{
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
+
+.box-small:hover{
+
+    background-color: azure;
+    transition: all 300ms ease;
+}
+
+.container{
+border: 4px solid grey;
+display: flex;
+justify-content:space-between;
+padding: 24px;/* put space above and below all of the boxes*/
+}
+
+.box-wrapper{
+
+    display: flex;
+    align-items: center;
+}
+
+/*-----------NOW LET'S CREATE A SECTION WHERE WE HAVE CONTENT TOP TO BOTTOM UNDER A MENU, THIS IS MORE 
+COMPLICATED TO DO SO MAKE SURE YOU PAY ATTENTION TO WHAT IS BEING DONE----------------*/
+
+/*---------FIRST THE CONTAINER TO HOLD EVERYTHING--------------*/
+.container2{
+    border: 4px solid grey;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------THIS WILL KEEP EVERYTHING IN LINE WHEN IT COMES TO THE BOXES YOU CREATE AND KEEPS THEM 
+A CERTAIN SIZE, MAKE SURE TO USE WIDTH 100% TO ADD DYNAMIC SIZING------------*/
+.row {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*---------------------- THIS IS THE TITLE BOX I CALL IT LONGBOX BECAUSE IT IS LONG----------------*/
+.longbox{
+    border: 2px solid grey;
+   height: 30px;
+   width: 100%;
+   margin-bottom: 24px;
+}
+
+.box2 {
+    border: 4px solid lightgrey;
+    width: 30%;
+    height: 100px;
+margin-bottom: 24px;
+}
+
+.boxboy{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    margin-bottom: 24px;}
+
+/*----------THE THIRD TYPE OF LAYOUT LET'S GO------------------*/
+
+.third{
+    width: 100%;
+}
+.threebox{
+    display:flex;
+}
+.container3{
+
+    border: 4px solid lightgrey;
+    height: 500px;
+    width: 100%;
+    padding: solid12px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+.holder{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+
+.rectangle {
+    border: 4px solid red;
+    height: 110px;
+    margin: 18px;
+}
+
+.big-square{
+    margin: 24px;
+    border: 4px solid blue;
+    height: 400px;
+    width: 50%;
+}
+
+/*-------NOW LET'S DO ONE WHERE WE HAVE MORE OF THE SAME BUT INSTEAD OF THREE RECTANGLES
+THERE ARE THREE SQUARES UNDER TWO RECTANGLES-------*/
+
+.longbox{
+    border: 2px solid grey;
+   height: 30px;
+   width: 100%;
+   margin-bottom: 24px;
+}
+
+.box2 {
+    border: 4px solid lightgrey;
+    width: 30%;
+    height: 100px;
+margin-bottom: 24px;
+}
+
+.boxboy{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    margin-bottom: 24px;}
+
+/*----------THE THIRD TYPE OF LAYOUT LET'S GO------------------*/
+
+.fourth {
+    .fourth {
+        width: 100%;
+    }
+    
+    .fourbox {
+        /* Ensuring the container takes full width */
+    }
+    
+    .container4 {
+        border: 4px solid lightgrey;
+        padding: 24px;
+        display: flex; /* This will help in aligning items side by side */
+        justify-content: center; /* Center the items horizontally */
+    }
+    
+    .holder2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%; /* Adjusted to fit alongside the big square */
+    }
+    
+    .rectangle2 {
+        border: 4px solid red;
+        height: 110px;
+        margin: 18px 0; /* Adjusted margin for top and bottom only */
+    }
+    
+    .chain {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tinybox {
+        border: 4px solid purple;
+        height: 100px;
+        width: 30%; /* This will make each box take up 30% of the container width */
+    }
+    
+    .big-square2 {
+        margin: 24px;
+        border: 4px solid blue;
+        height: 400px;
+        width: 45%; /* Adjusted to ensure it fits next to the holder2 */
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }}
+
+.fourbox {
+    /* Ensuring the container takes full width */
+}
+
+.container4 {
+    border: 4px solid lightgrey;
+    padding: 24px;
+    display: flex; /* This will help in aligning items side by side */
+}
+
+.holder2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%; /* Adjusted to fit alongside the big square */
+}
+
+.rectangle2 {
+    border: 4px solid red;
+    height: 110px;
+    margin: 18px 0; /* Adjusted margin for top and bottom only */
+}
+
+.chain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tinybox {
+    border: 4px solid purple;
+    height: 100px;
+    width: 30%; /* This will make each box take up 30% of the container width */
+}
+
+.big-square2 {
+    margin: 24px;
+    border: 4px solid blue;
+    height: 400px;
+    width: 45%; /* Adjusted to ensure it fits next to the holder2 */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start; /* This ensures the big square aligns at the top */
+}
